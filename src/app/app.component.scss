@@ -5,11 +5,22 @@
     padding: 32px;
     background-color: white;
     border-radius: 8px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 main {
     max-width: 1200px;
-    margin: auto;
+    margin: 16px;
+    @include desktop {
+        margin: 16px auto;
+    }
 }
 
 .name {
@@ -18,7 +29,7 @@ main {
     font-size: 28px;
     text-align: center;
     @include tablet {
-        font-size: 32px;
+        font-size: 36px;
     }
 }
 
@@ -42,11 +53,114 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 32px;
     gap: 8px;
+    width: 100%;
     @include desktop {
         flex-direction: row;
         margin-bottom: 0;
         gap: 32px;
     }
+}
+
+    p {
+        margin-bottom: 0.5em;
+        font-size: 16px;
+    }
+
+.contact {
+    background-color: #0AA1DD;
+    border-radius: 8px;
+    color: white;   
+    height: min-content;
+    a {
+        color: white;
+    }
+}
+
+section {
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.gray {
+    color: $font-gray;
+}
+
+.main-data {
+    @include desktop {
+        max-width: 33.3%;
+    }
+}
+
+
+
+h3 {
+    color: $font-dark-gray;
+}
+
+.chip {
+    border-radius: 1em;
+    padding: 2px 12px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    -webkit-box-shadow:  0px 0px 8px 0px $background;
+    -moz-box-shadow:  0px 0px 8px 0px $background;
+    box-shadow:  0px 0px 8px 0px $background;
+}
+
+.chips-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+
+    &.red {
+        .chip {
+            background-color: #EB5353;
+        }
+    }
+
+    &.blue {
+        .chip {
+            background-color: #187498;
+        }
+    }
+
+    &.green {
+        .chip {
+            background-color: #36AE7C;
+        }
+    }
+
+    &.orange {
+        .chip {
+            background-color: #FF5F00;
+        }
+    }
+}
+
+.chip.minor {
+    opacity: 0.6;
+    border-color: transparent;
+}
+
+.anticon[nztype='star'] {
+    color: #FFC107;
+}
+
+.skills {
+    @include desktop {
+        max-width: 70%;
+    }
+}
+
+.avatar-wrapper {
+    width: 200px;
 }

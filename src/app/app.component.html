@@ -1,16 +1,157 @@
 <main>
   <div class="card">
-    <div class="personal-data">
-      <prf-avatar src="https://i.pravatar.cc/300"></prf-avatar>
+    <section class="personal-data">
+      <div class="avatar-wrapper">
+        <prf-avatar src="assets/avatar.jpg"></prf-avatar>
+      </div>
       <div class="data-wrapper">
         <span class="name">Norbert Bańkowski</span>
         <span class="position"> Professional Angular Developer </span>
       </div>
+    </section>
+
+    <div class="main-data">
+      <section class="introduction">
+        <h2>About me</h2>
+        <p>
+          I'm front-end developer with more than three years of commercial
+          experience in developing web applications. Althougth I've created my
+          first website sixteen years ago.
+        </p>
+        <p>I'm a supporter of reusability and developing clean architecture.</p>
+        <p>Would like to learn front-end in direction of 3D Graphics in web.</p>
+      </section>
+
+      <section class="contact">
+        <div>
+          <i nz-icon nzType="linkedin" nzTheme="fill"></i>
+          <span> https://pl.linkedin.com/in/norbert-bańkowski-624339148 </span>
+        </div>
+        <div>
+          <i nz-icon nzType="github" nzTheme="fill"></i>
+          <span> https://github.com/DomonX </span>
+        </div>
+
+        <div>
+          <i nz-icon nzType="mail" nzTheme="fill"></i>
+          <span> nbankowski98@gmail.com </span>
+        </div>
+
+        <div>
+          <i nz-icon nzType="phone" nzTheme="fill"></i>
+          <a> 500749884 </a>
+        </div>
+      </section>
     </div>
 
-    <div class="contact">
-      
+    <section class="experience">
+      <h2>Experience</h2>
+      <nz-timeline>
+        <nz-timeline-item
+          ><p>Britenet</p>
+          <p class="gray">Professional Angular Developer</p>
+          <p class="small gray">06.2021 - 06.2022</p>
+        </nz-timeline-item>
+        <nz-timeline-item
+          ><p>Apr System</p>
+          <p class="gray">Junior Angular Developer</p>
+          <p class="small gray">06.2019 - 11.2020</p></nz-timeline-item
+        >
+        <nz-timeline-item
+          ><p>Niepubliczne przedszkole "Jaś i małgosia"</p>
+          <p class="gray">Javascript Developer / IT Technician</p>
+          <p class="small gray">02.2017 - 09.2017</p></nz-timeline-item
+        >
+        <nz-timeline-item
+          ><p>MP Net Sp. z.o.o</p>
+          <p class="gray">Wordpress trainee</p>
+          <p class="small gray">05.2017 - 06.2017</p></nz-timeline-item
+        >
+      </nz-timeline>
+    </section>
 
-    </div>
+    <section class="education">
+      <h2>Education</h2>
+      <nz-timeline>
+        <nz-timeline-item
+          ><p>Politechnika Świętokrzyska</p>
+          <p class="gray">Bachelor of Science in Computer Science</p>
+          <p class="small gray">Computer graphics</p>
+          <p class="small gray">10.2018 - 02.2022</p></nz-timeline-item
+        >
+
+        <nz-timeline-item
+          ><p>ZSE Kielce</p>
+          <p class="gray">IT Specialist</p>
+          <p class="small gray">09.2014 - 05.2018</p></nz-timeline-item
+        >
+      </nz-timeline>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <h3>Expert</h3>
+      <span class="gray"> Work in progress </span>
+      <h3>Advanced</h3>
+      <div class="chips-list red">
+        <div class="chip">
+          Angular2+ <i nz-icon nzType="star" nzTheme="fill"></i>
+        </div>
+        <div class="chip">
+          TypeScript <i nz-icon nzType="star" nzTheme="fill"></i>
+        </div>
+        <div class="chip">
+          RxJS <i nz-icon nzType="star" nzTheme="fill"></i>
+        </div>
+        <div class="chip">JavaScript</div>
+        <div class="chip">ES6</div>
+        <div class="chip">HTML</div>
+        <div class="chip">CSS / SCSS</div>
+      </div>
+      <h3>Intermediate</h3>
+      <div class="chips-list blue">
+        <div class="chip">Node</div>
+        <div class="chip">NGxS</div>
+        <div class="chip">Karma</div>
+        <div class="chip minor">REST</div>
+        <div class="chip minor">Ng Zorro</div>
+        <div class="chip minor">Material Design</div>
+        <div class="chip minor">PrimeNG</div>
+      </div>
+      <h3>Basic</h3>
+      <div class="chips-list green">
+        <div class="chip">C#</div>
+        <div class="chip">C / C++</div>
+        <div class="chip">Unity</div>
+        <div class="chip">Java</div>
+        <div class="chip minor">OpenGL</div>
+        <div class="chip minor">PHP</div>
+      </div>
+      <h3>Learning</h3>
+      <div class="chips-list orange">
+        <div class="chip">Flutter</div>
+      </div>
+      <div></div>
+    </section>
+
+    <section>
+      <h2>Others</h2>
+      <div class="lanuguages">
+        <div class="chips-list red">
+          <div class="chip">English (B2)</div>
+          <div class="chip">Driving Licence cat. B</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certificates / Trainings</h2>
+      <div class="certificate">
+        <p>Europass mobility, Euromind Projects S.L.</p>
+        <p>Programming in Java using Android Studio</p>
+        <p class="gray">Sewilla Spain, Colegio Salesianos San Pedro</p>
+        <p class="gray small">07.2017</p>
+      </div>
+    </section>
   </div>
 </main>
