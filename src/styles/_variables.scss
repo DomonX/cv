@@ -1,0 +1,15 @@
+$background: #121212;
+$font-dark-gray: #4a4a4a;
+$font-gray: #828282; 
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
